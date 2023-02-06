@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ResultActivity2">
+
+    <TextView
+        android:id="@+id/textview_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-7dp"
+        android:maxLength="20"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="  " />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="30dp"
+        android:text="seu IMC é:"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textview_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="40dp"
+        android:maxLength="5"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        tools:text="27.10" />
+
+    <TextView
+        android:id="@+id/textview_classificacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="160dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        tools:text="Classificação: Normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="255dp"
+        android:text="CONFIRA A TABELA ABAIXO"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textview_classificacao"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="-47dp"
+        android:layout_marginBottom="34dp"
+        android:src="@drawable/file" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="111dp"
+        android:text="Nota: o cálculo de IMC não leva em consideração a composição corporal.  Por esse motivo, pessoas com muita massa muscular,
+como é o caso de alguns atletas, podem apresentar um IMC acima do normal.
+O ideal é consultar um nutricionista para fazer uma avaliação mais detalhada."
+        android:textAlignment="center"
+        android:textStyle="italic" />
+
+    <view
+        android:id="@+id/view"
+        class="androidx.constraintlayout.helper.widget.Flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <view
+        android:id="@+id/view2"
+        class="androidx.constraintlayout.widget.ConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
